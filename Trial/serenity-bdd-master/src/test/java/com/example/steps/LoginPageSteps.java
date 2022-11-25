@@ -1,7 +1,6 @@
 package com.example.steps;
 
 import com.example.BaseTest;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -42,5 +41,4 @@ public class LoginPageSteps extends BaseTest {
     //Hamcrest
     MatcherAssert.assertThat(isDisplayed, Matchers.equalTo(true));
   }
-
 }

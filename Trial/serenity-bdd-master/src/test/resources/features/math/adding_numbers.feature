@@ -6,6 +6,3 @@ Feature: Adding Numbers
     And b is 2
     When I add a and b
     Then the total should be 3
-
-  @math
-  Scenario:

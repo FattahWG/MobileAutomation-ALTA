@@ -1,0 +1,9 @@
+!!com.example.app.properties.PropertiesData
+appiumProperties:
+  platformName: android
+  deviceName: device
+  udid: emulator-5554
+  app: /Users/hendrione/Code/APPS/app-debug_v.1.0.apk
+  automationName: UIAutomator2
+  newCommandTimeout: 120
+  autoGrantPermissions: true

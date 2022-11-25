@@ -23,6 +23,7 @@ public class AndroidDriverHook {
 
   @BeforeStep
   public void beforeStep() {
+
   }
 
   @AfterStep
