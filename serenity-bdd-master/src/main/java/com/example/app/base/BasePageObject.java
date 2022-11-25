@@ -16,36 +16,17 @@ import java.util.List;
 
 public class BasePageObject {
 
-  WebDriverWait driverWait;
-
   TouchAction touchAction;
 
   public TouchAction getTouchAction() {
     touchAction = new TouchAction(getDriver());
     return touchAction;
   }
-
   public AndroidDriver<AndroidElement> getDriver(){
     return AndroidDriverInit.driver;
   }
-
   public AndroidElement find(By by){
     return getDriver().findElement(by);
-  }
-
-  public void type(By by, String text){
-    AndroidElement element = find(by);
-    element.clear();
-    element.sendKeys(text);
-  }
-  public void number(By by, int text){
-    AndroidElement element = find(by);
-    element.clear();
-    element.sendKeys();
-  }
-
-  public void click(By by){
-    find(by).click();
   }
 
   public String getText(By by){
@@ -54,10 +35,13 @@ public class BasePageObject {
   public List<AndroidElement> findElements(By locatorName) {
     return getDriver().findElements(locatorName);
   }
-
-
-  public boolean isDisplayed(By by){
-    return find(by).isDisplayed();
+  public void type(By by, String text){
+    AndroidElement element = find(by);
+    element.clear();
+    element.sendKeys(text);
+  }
+  public void click(By by){
+    find(by).click();
   }
 
   public void longPressObject(AndroidElement elementToPress) {
@@ -66,11 +50,9 @@ public class BasePageObject {
             .release()
             .perform();
   }
-
   public void tapMultipleTimes(AndroidElement elementToTap) {
     getTouchAction().tap(TapOptions.tapOptions().withTapsCount(5)
                     .withElement(ElementOption.element(elementToTap)))
             .perform();
   }
-
 }

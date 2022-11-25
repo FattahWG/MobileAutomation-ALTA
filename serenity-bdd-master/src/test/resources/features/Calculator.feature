@@ -51,7 +51,6 @@ Feature: Calculator
       | angka1 | angka2 | result       |
       | 1      | 1      | "Hasil : 1"  |
       | 4      | 2      | "Hasil : 2"  |
-      | 2      | 1      | "Hasil : 2"  |
       | 50     | 5      | "Hasil : 10" |
 
   @multi
@@ -65,7 +64,6 @@ Feature: Calculator
     And result should be <result>
     Examples:
       | angka1 | angka2 | result        |
-      | 1      | 1      | "Hasil : 1"   |
       | 1      | 2      | "Hasil : 2"   |
       | 2      | 1      | "Hasil : 2"   |
       | 50     | 5      | "Hasil : 250" |

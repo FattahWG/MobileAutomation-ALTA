@@ -20,7 +20,7 @@ public class ListPage extends BasePageObject {
   }
 
   public void tapMultipleTimesInTheSecondMenu() {
-    tapMultipleTimes(findElements(elementListOfText).get(1));
+    tapMultipleTimes(findElements(elementListOfText).get(5));
   }
 
 }
