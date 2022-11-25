@@ -1,14 +1,10 @@
 package com.example.steps;
 
 import com.example.BaseTest;
-import com.example.app.Calculator;
-import com.example.app.pages.CalculatorPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.hamcrest.MatcherAssert;
-import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Assertions;
 
 public class CalculatorPageSteps extends BaseTest{

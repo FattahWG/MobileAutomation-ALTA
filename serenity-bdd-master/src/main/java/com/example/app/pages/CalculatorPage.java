@@ -48,6 +48,4 @@ public class CalculatorPage extends BasePageObject {
     public String ResultString(){
         return getText(MobileBy.id("com.isl.simpleapp:id/tv_result"));
     }
-
-
 }

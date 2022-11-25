@@ -1,0 +1,9 @@
+!!helper.PropertiesData
+appiumProperties:
+  platformName: ANDROID
+  deviceName: Android
+  udid: emulator-5554
+  app: /Users/azzamnizar/Downloads/sample-apk.apk
+  automationName: UIAutomator2
+  newCommandTimeout: 120
+  autoGrantPermissions: true

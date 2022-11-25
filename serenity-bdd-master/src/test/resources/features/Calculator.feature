@@ -54,7 +54,6 @@ Feature: Calculator
       | 2      | 1      | "Hasil : 2"  |
       | 50     | 5      | "Hasil : 10" |
 
-
   @multi
   Scenario Outline: User using calculator for multiple math
     Given user is on calculator page
@@ -70,6 +69,18 @@ Feature: Calculator
       | 1      | 2      | "Hasil : 2"   |
       | 2      | 1      | "Hasil : 2"   |
       | 50     | 5      | "Hasil : 250" |
+
+
+  @math
+  Scenario: Calculator cant show decimal result
+    Given user is on calculator page
+    When user input first number 1
+    And user input second number 2
+    Then user click dropdown
+    And user select option divided button
+    Then user click button result
+    And result should be "Hasil : 0"
+
 
 
 
